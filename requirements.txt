@@ -1,0 +1,3 @@
+# Python dependencies for the Vercel deployment (root index.py).
+# Keep in sync with backend/requirements.txt. Vercel runs its own server, so uvicorn is not needed here.
+fastapi>=0.115,<1.0

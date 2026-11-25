@@ -1,0 +1,11 @@
+# Render Blueprint: deploys ParseLab as one free web service built from the Dockerfile.
+# In Render: New → Blueprint → pick this GitHub repository → Apply.
+services:
+  - type: web
+    name: parselab
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    healthCheckPath: /api/health
+    autoDeploy: true

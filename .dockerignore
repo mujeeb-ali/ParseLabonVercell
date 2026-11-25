@@ -1,0 +1,18 @@
+# Keep the Docker build context small: these are rebuilt inside the image.
+.git
+.venv
+venv
+**/__pycache__
+**/*.pyc
+.pytest_cache
+frontend/node_modules
+frontend/dist
+
+# Not needed to run the app
+presentation
+*.md
+!README.md
+.vscode
+.idea
+.env
+.env.*
